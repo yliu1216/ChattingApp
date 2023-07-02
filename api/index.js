@@ -25,7 +25,7 @@ app.use('/uploads', express.static(__dirname+'/uploads'));
 app.use(cookieParser());
 app.use(cors({
     credentials: true,
-    origin: ['http://192.168.56.1:3000', 'http://localhost:3000'],
+    origin: ['http://192.168.56.1:3000', 'http://localhost:3000', 'http://localhost:3001'],
     allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Credentials'],
 }));
 
